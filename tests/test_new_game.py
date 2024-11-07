@@ -14,7 +14,6 @@ def test_start_new_game_success():
     Test that starting a new game returns a successful response with a game_id and message.
     """
     response = requests.post(f"{BASE_URL}/game/new")
-
     assert response.status_code == 200, "Expected status code 200"
 
     json_response = response.json()
