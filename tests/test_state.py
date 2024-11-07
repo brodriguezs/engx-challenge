@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_HOST = os.getenv("HOST")
-BASE_URL = f"http://{BASE_HOST}:8000"  # Replace with the actual base URL of your API
+BASE_URL = f"{BASE_HOST}"  # Replace with the actual base URL of your API
 
 
 def test_game_in_progress():
